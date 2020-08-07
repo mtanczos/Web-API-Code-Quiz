@@ -2,6 +2,8 @@
 
 > This is an interactive quiz game using Vanilla JavaScript. There are 10 questions to answer within 60 seconds, if the user picks the wrong answer 10 seconds will be deducted from there timer. If the user gets a question correct, then the background will change, and a sound will play. When an incorrect answer is selected the user will see the correct answer displayed and a sound will play. Once the user's timer is up or all questions have been answered they will see their final score and they can enter in their initials. All scores will be stored in local storage.
 
+See it in action https://mtanczos.github.io/Web-API-Code-Quiz/
+
 ## Table of contents
 * [Acceptance_Criteria](#Acceptance_Criteria)
 * [Screenshots](#screenshots)
