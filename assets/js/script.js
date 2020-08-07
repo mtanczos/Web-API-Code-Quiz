@@ -115,6 +115,7 @@ function checkUsersAnswers(event) {
     }
 };
 
+//play sound
 function play(soundType) {
     if(soundType==="playCorrect"){
         var audio = new Audio('assets/sounds/correct.wav');
@@ -124,7 +125,7 @@ function play(soundType) {
     }
     audio.play();
   }
-  
+
  function changeBkImage() {//change background back to orignal image
         document.body.style.backgroundImage = "url('assets/img/background.jpg')";
   }
