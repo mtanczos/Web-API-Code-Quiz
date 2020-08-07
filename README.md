@@ -7,6 +7,7 @@ There are 10 questions to answer within 60 seconds, if the user picks the wrong 
 * [Acceptance_Criteria](#Acceptance_Criteria)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [Acknowledgement](#Acknowledgement)
 
 ## Acceptance_Criteria
 GIVEN I am taking a code quiz
@@ -34,5 +35,7 @@ THEN I can save my initials and score
 * CSS3
 * JavaScript
 
+## Acknowledgement 
+* https://www.w3schools.com/js/
 
 
