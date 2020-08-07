@@ -24,46 +24,72 @@ let userInit;
 // Array letiable to contain the question objects
 let questionArr = [{
         question: "What is the HTML tag under which one can write the JavaScript code?",
-        answers: ["<javascript>", "<scripted>", "<script>", "<js>"],
-        correct: "<script>",},
+        answers: ["A - <javascript>", 
+        "B - <scripted>", 
+        "C - <script>", 
+        "D - <js>"],
+        correct: "C - <script>",},
 
     {
         question: "What is the JavaScript syntax for printing values in Console?",
-        answers: ["print(5)", "console.log(5);", "console.print(5);", "print.console(5);"],
-        correct: "console.log(5);",},
+        answers: ["A - print(5)", 
+        "B - console.log(5);", 
+        "C - console.print(5);", 
+        "D - print.console(5);"],
+        correct: "B - console.log(5);",},
     {
         question: "What does CSS stand for?",
-        answers: ["Computer Style Sheets", "Colorful Style Sheets", "Creative Style Sheets", "Cascading Style Sheets"],
-        correct: "Cascading Style Sheets",},
+        answers: ["A - Computer Style Sheets", 
+        "B - Colorful Style Sheets", 
+        "C - Creative Style Sheets", 
+        "D - Cascading Style Sheets"],
+        correct: "D - Cascading Style Sheets",},
     {
         question: "Where in an HTML document is the correct place to refer to an external style sheet?",
-        answers: ["At the end of the document", "In the <head> section", "In the <body> section", "In the footer"],
-        correct: "In the <head> section",},
+        answers: ["A - At the end of the document",
+         "B - In the <head> section", 
+         "C - In the <body> section", 
+         "D - In the footer"],
+        correct: "B - In the <head> section",},
 
     {
         question: "What does HTML stand for?",
-        answers: ["Home Tool Markup Language", "Hyper Text Markup Language", "Hyperlinks and Text Markup Language", "Happy Time Markup Language"],
-        correct: "Hyper Text Markup Language",},
+        answers: ["A - Home Tool Markup Language", 
+        "B - Hyper Text Markup Language", 
+        "C - Hyperlinks and Text Markup Language", 
+        "D - Happy Time Markup Language"],
+        correct: "B - Hyper Text Markup Language",},
     {
         question: "Choose the correct HTML element for the largest heading",
-        answers: ["<head>", "<heading>", "<h1>", "<h6>"],
-        correct: "<h1>",},
+        answers: ["A - <head>", "B -  <heading>", "C - <h1>", "D - <h6>"],
+        correct: "C - <h1>",},
 
     {
         question: "which of the following is the correct way of creating an hyperlink in HTML?",
-        answers: ["<a>www.geeksforgeeks.org <Geeksforgeeks /a>", "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>",
-            "<a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>", "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>"],
-        correct: "<a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>",},
+        answers: ["A - <a>www.geeksforgeeks.org <Geeksforgeeks /a>", 
+                  "B - <a href=“www.geeksforgeeks.org” Geeksforgeeks /a>",
+                  "C - <a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>", 
+                  "D - <a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>"],
+        correct: "C - <a href= “www.geeksforgeeks.org”>Geeksforgeeks</a>",},
 
     {
         question: "Which function of an Array object calls a function for each element in the array?",
-        answers: ["forEach()", "every()", "forEvery()", "each()"],
-        correct: "forEach()",},
+        answers: ["A - forEach()", "B - every()", "C - forEvery()", "D - each()"],
+        correct: "A - forEach()",},
 
     {
         question: "How is the function called in JavaScript?",
-        answers: ["call Geekfunc();", "call function GeekFunc();", "Geekfunc(); ", "function Geekfunc();"],
-        correct: "function Geekfunc();",}];
+        answers: ["A - call Geekfunc();", "B - call function GeekFunc();", "C - Geekfunc(); ", "D - function Geekfunc();"],
+        correct: "D - function Geekfunc();",},
+
+    {
+        question: "Which of the following is true about variable naming conventions in JavaScript?",
+        answers: ["A - You should not use any of the JavaScript reserved keyword as variable name", 
+        "B - JavaScript variable names should not start with a numeral (0-9)", 
+        "C - Both of the above", 
+        "D - None of the above"],
+        correct: "C - Both of the above",}
+    ];
 
 // Timer function 
 function startTimer() {
@@ -104,8 +130,7 @@ function checkUsersAnswers(event) {
     if (event.target.textContent === correctAnswer) {
         document.body.style.backgroundImage = "url('assets/img/fireworks.gif')";
         play("playCorrect")
-        setTimeout(function(){ changeBkImage();}, 2500);
-        getNextQuestion();
+        setTimeout(function(){ changeBkImage();getNextQuestion();}, 1500);
     } else {
         // Adjust timer by -10 seconds if user gets wrong answer
         play("playWrong")
