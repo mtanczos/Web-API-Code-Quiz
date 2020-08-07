@@ -1,7 +1,7 @@
 # WEB API Quiz
 
-> This is my first responsive website using bootstrap 4.5, HTML5, CSS3. The website includes 3 pages which include About, Contact, and Portfolio, they will all shrink/ grow 
-as the screen is resized.
+> This is an interactive quiz game using Vanilla JavaScript.
+There are 10 questions to answer within 60 seconds, if the user picks the wrong answer 10 seconds will be deducted from there timer. If the user get the question correct then the background will change and a sound will play. When an incorrect answer is selected the user will see the correct answer and a sound will play. Once the user's timer is up or all questions have been answered they will see their final score and they can ener in there initials. All scores will be stored in local storage.
 
 ## Table of contents
 * [General info](#general-info)
