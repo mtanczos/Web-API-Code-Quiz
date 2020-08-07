@@ -1,4 +1,4 @@
-# Responsive-Portfolio
+# WEB API Quiz
 
 > This is my first responsive website using bootstrap 4.5, HTML5, CSS3. The website includes 3 pages which include About, Contact, and Portfolio, they will all shrink/ grow 
 as the screen is resized.
