@@ -74,7 +74,7 @@ function startTimer() {
         if (secondsLeft <= 0) {
             endQuestions()
         };
-    }, 1000); // Timer function set to 1 second interval
+    }, 2000); // Timer function set to 1 second interval
 };
 
 // End Questions function
