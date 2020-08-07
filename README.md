@@ -4,14 +4,26 @@
 There are 10 questions to answer within 60 seconds, if the user picks the wrong answer 10 seconds will be deducted from there timer. If the user get the question correct then the background will change and a sound will play. When an incorrect answer is selected the user will see the correct answer and a sound will play. Once the user's timer is up or all questions have been answered they will see their final score and they can ener in there initials. All scores will be stored in local storage.
 
 ## Table of contents
-* [General info](#general-info)
+* [Acceptance_Criteria](#Acceptance_Criteria)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
-* [Features](#features)
 
+## Acceptance_Criteria
+GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a questio
 
-## General info
-I really enjoyed building this website using Bootstrap which made this project really easy to make. I also used semantic html which describes its meaning to both the browser and the developer
+WHEN I answer a question
+THEN I am presented with another question
+
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+
+WHEN the game is over
+THEN I can save my initials and score
 
 ## Screenshots
 ![Example screenshot](assets/newDemo.gif)
@@ -20,15 +32,7 @@ I really enjoyed building this website using Bootstrap which made this project r
 * Bootstrap 4.5
 * HTML5
 * CSS3
+* JavaScript
 
-## Features
-List of features I incorparated
-* interactive contact form
-* used interactive nav bar
-* sticky footer
-
-## To-do list:
-* Need to add a way of enlarging portfolio images
-* Complete the contact form so it works
 
 
