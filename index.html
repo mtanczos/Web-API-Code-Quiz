@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="sounds.js" type="text/javascript"></script>
+    <title>API Code Quiz</title>
+</head>
+    <body>
+        <div class="bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"><br><br>
+                        <!-- Highscore card -->
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" id="btnCollapse" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            View Highscores
+                                        </button>
+                                    </h5>
+                                </div>
+                                <!-- View Highscores -->
+                                <div id="collapseOne" class="collapse hide" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <!-- Card -->
+                                        <div class="card">
+                                            <!-- Leader Table -->
+                                            <table class="table">
+                                                    <tr>
+                                                        <th scope="col">Initials</th>
+                                                        <th scope="col">Score</th>
+                                                    </tr>
+                                                <tbody id="scoreArea"></tbody>
+                                            </table>
+                                            <!-- Navigation Buttons -->
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-primary" id="clear">Clear All Highscores</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <!-- container for quiz -->
+                        <div class="container" style="margin-left: 0 auto;">
+                            <div class="d-flex mt-5 justify-content-center">
+                                <!-- Card -->
+                                <div class="card" style="width: 40rem;">
+                                    <div class="card-body text-center">
+                                        <!-- Card Title -->
+                                        <h5 class="card-title" id="card-title">HTML, JavaScript, CSS Quiz</h5>
+
+                                        <!-- Card Text -->
+                                        <p class="card-text" id="card-text">Try to answer the following code-related
+                                            questions within the time limit. Keep in mind that incorrect answers will
+                                            penalize your scoretime by
+                                            ten seconds!
+                                        </p>
+                                        <!-- Initials Input Form -->
+                                        <form onsubmit="local(event)">
+                                            <div class="form-group">
+                                                <label id="initialsInputLabel" class="d-none">Please type your initials
+                                                    here:</label>
+                                                <input type="text" id="initialsInput" class="form-control d-none"><br>
+                                                <button type="submit" class="btn btn-success d-none"
+                                                    id="continue">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- Answer Buttons -->
+                                    <div class="btn-group-vertical" id="answer_list" ></div>
+                                    <!-- Start Button -->
+                                    <div id="startBtn"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"><br><br>
+                        <!-- Timer -->
+                        <div class="p-2 bd-highlight" id="timer">Timer: 60 seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript Link -->
+        <script src="assets/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
