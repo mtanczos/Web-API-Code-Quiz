@@ -14,7 +14,7 @@ as the screen is resized.
 I really enjoyed building this website using Bootstrap which made this project really easy to make. I also used semantic html which describes its meaning to both the browser and the developer
 
 ## Screenshots
-![Example screenshot](assets/demo.gif)
+![Example screenshot](assets/newDemo.gif)
 
 ## Technologies
 * Bootstrap 4.5
