@@ -103,19 +103,29 @@ function checkUsersAnswers(event) {
     let correctAnswer = questionArr[questionIndex].correct;
     if (event.target.textContent === correctAnswer) {
         document.body.style.backgroundImage = "url('assets/img/fireworks.gif')";
-        playSound()
-        setTimeout(function(){ changeBkImage(); }, 2000);
+        play("playCorrect")
+        setTimeout(function(){ changeBkImage();}, 2500);
         getNextQuestion();
     } else {
         // Adjust timer by -10 seconds if user gets wrong answer
-        document.body.style.backgroundImage = "url('assets/img/background.jpg')";
+        play("playWrong")
         alert(`Sorry, the correct answer was "${correctAnswer}"`);
         secondsLeft -= 10;
         getNextQuestion();
     }
 };
 
- function changeBkImage() {
+function play(soundType) {
+    if(soundType==="playCorrect"){
+        var audio = new Audio('assets/sounds/correct.wav');
+    } 
+    else{
+        var audio = new Audio('assets/sounds/wrong.mp3');
+    }
+    audio.play();
+  }
+  
+ function changeBkImage() {//change background back to orignal image
         document.body.style.backgroundImage = "url('assets/img/background.jpg')";
   }
 
